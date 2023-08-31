@@ -220,3 +220,8 @@ const modalMensajeEnviado = document.getElementById('modal-mensaje-enviado');
 function mostrarModalMensajeEnviado() {
     modalMensajeEnviado.style.display = 'block';
 }
+
+document.getElementById("regresarEnlace").addEventListener("click", function(event) {
+  event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+  window.history.back(); // Regresa a la página anterior en el historial del navegador
+});
