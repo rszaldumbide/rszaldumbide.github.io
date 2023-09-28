@@ -191,27 +191,6 @@ $(document).ready(function () {
   counterInit();
 });
 
-function pregunta() {
-
-  swal({
-    title: "¡Enviado! :D",
-    text: "Pronto me pondré en contacto contigo",
-    type: "success",
-    timer: 500,
-    showConfirmButton: false
-  }, function () {
-    window.location.href = "http://rzaldumbide.me/";
-  });
-}
-function mostrarError() {
-  Swal.fire({
-    icon: 'Ops :(',
-    title: 'Error',
-    text: 'Ocurrió un error en el proceso.',
-    confirmButtonText: 'OK'
-  });
-}
-
 // Obtener referencia al botón y al modal
 const botonEnviar = document.getElementById('boton-enviar');
 const modalMensajeEnviado = document.getElementById('modal-mensaje-enviado');
